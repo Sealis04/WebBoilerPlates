@@ -5,40 +5,40 @@ import { cn } from "~/lib/utils";
 
 export default function Navbar() {
   return (
-    <NavigationMenu className="absolute top-0 p-4">
-        <NavigationMenuList>
+    <NavigationMenu className="fixed top-0 w-full p-4">
+      <NavigationMenuList>
         {/* Sample Comp for Item */}
-          <NavigationMenuItem>
-            <NavigationMenuTrigger>Item One</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <ul className="flex flex-col w-[300px] gap-3 p-4">
-                <li>
-                  <NavigationMenuLink>Link</NavigationMenuLink>
-                </li>
-              </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger>Item One</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="flex w-[300px] flex-col gap-3 p-4">
+              <li>
+                <NavigationMenuLink>Link</NavigationMenuLink>
+              </li>
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
 
-          <NavigationMenuItem>
-            <NavigationMenuTrigger>Item Two</NavigationMenuTrigger>
-            <NavigationMenuContent>
-              <ul className="flex flex-col w-[300px] gap-3 p-4">
-                <li>
-                    {/* Sample Comp for List Item, uses <a> tag for links */}
-                    <ListItem title="Hello test" href="/">
-                        Testing List desc
-                    </ListItem>
-                </li>
-                <li>
-                  <NavigationMenuLink>Link</NavigationMenuLink>
-                </li>
-                <li>
-                  <NavigationMenuLink>Link</NavigationMenuLink>
-                </li>
-              </ul>
-            </NavigationMenuContent>
-          </NavigationMenuItem>
-        </NavigationMenuList>
+        <NavigationMenuItem>
+          <NavigationMenuTrigger>Item Two</NavigationMenuTrigger>
+          <NavigationMenuContent>
+            <ul className="flex w-[300px] flex-col gap-3 p-4">
+              <li>
+                {/* Sample Comp for List Item, uses <a> tag for links */}
+                <ListItem title="Hello test" href="/">
+                  Testing List desc
+                </ListItem>
+              </li>
+              <li>
+                <NavigationMenuLink>Link</NavigationMenuLink>
+              </li>
+              <li>
+                <NavigationMenuLink>Link</NavigationMenuLink>
+              </li>
+            </ul>
+          </NavigationMenuContent>
+        </NavigationMenuItem>
+      </NavigationMenuList>
     </NavigationMenu>
   );
 }
