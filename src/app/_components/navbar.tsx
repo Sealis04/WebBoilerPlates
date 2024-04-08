@@ -1,0 +1,72 @@
+'use client'
+import { forwardRef } from "react";
+import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "~/components/ui/navigation-menu";
+import { cn } from "~/lib/utils";
+
+export default function Navbar() {
+  return (
+    <NavigationMenu className="absolute top-0 p-4">
+        <NavigationMenuList>
+        {/* Sample Comp for Item */}
+          <NavigationMenuItem>
+            <NavigationMenuTrigger>Item One</NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <ul className="flex flex-col w-[300px] gap-3 p-4">
+                <li>
+                  <NavigationMenuLink>Link</NavigationMenuLink>
+                </li>
+              </ul>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+
+          <NavigationMenuItem>
+            <NavigationMenuTrigger>Item Two</NavigationMenuTrigger>
+            <NavigationMenuContent>
+              <ul className="flex flex-col w-[300px] gap-3 p-4">
+                <li>
+                    {/* Sample Comp for List Item, uses <a> tag for links */}
+                    <ListItem title="Hello test" href="/">
+                        Testing List desc
+                    </ListItem>
+                </li>
+                <li>
+                  <NavigationMenuLink>Link</NavigationMenuLink>
+                </li>
+                <li>
+                  <NavigationMenuLink>Link</NavigationMenuLink>
+                </li>
+              </ul>
+            </NavigationMenuContent>
+          </NavigationMenuItem>
+        </NavigationMenuList>
+    </NavigationMenu>
+  );
+}
+
+
+const ListItem = forwardRef<
+    React.ElementRef<"a">,
+    React.ComponentPropsWithoutRef<"a">
+    >(({ className, title, children, ...props }, ref) => {
+    return (
+      <li>
+        <NavigationMenuLink asChild>
+          <a
+            {...props}
+            ref={ref}
+            className={cn(
+              "hover:bg-accent hover:text-accent-foreground focus:bg-accent focus:text-accent-foreground block select-none space-y-1 rounded-md p-3 leading-none no-underline outline-none transition-colors",
+              className,
+            )}
+          >
+            <div className="mb-2 mt-4 text-lg font-medium">{title}</div>
+            <p className="text-muted-foreground text-sm leading-tight">
+              {children}
+            </p>
+          </a>
+        </NavigationMenuLink>
+      </li>
+    );
+});
+
+ListItem.displayName = "ListItem";
