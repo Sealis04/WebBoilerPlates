@@ -5,7 +5,9 @@ import Image1 from "public/bgimages/Towa Tokoyam, Suisei Hoshimachi, Minato Aqua
 export default function Home(){
     return(
         <Page>
-            <ImagePlaceholder src={Image1.src} className="h-[90vh] w-[100%] px-60"/>
+            <ImagePlaceholder src={Image1.src} className="h-[50vh] w-[100%] px-60"/>
+            <ImagePlaceholder src={Image1.src} className="h-[40vh] w-[100%] px-60"/>
+            <ImagePlaceholder src={Image1.src} className="h-[50vh] w-[100%] px-60"/>
         </Page>
     )
 }

@@ -1,5 +1,5 @@
 'use client'
-import { createRef, useRef } from "react";
+import { useRef } from "react";
 import {ImagePlaceholder, CarouselImagePlaceholder} from "./_components/imageplaceholder";
 import { Page } from "./_components/pagedefault";
 import { useGSAP } from '@gsap/react'
@@ -31,7 +31,6 @@ export default function Home() {
     })
     tl.to(navBarRef.current,{
       backgroundColor:'rgb(49, 131, 232)',
-
     })
   },{});
   return (
