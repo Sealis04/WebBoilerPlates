@@ -1,6 +1,7 @@
 'use client'
+import Link from "next/link";
 import { forwardRef, type MutableRefObject} from "react";
-import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "~/components/ui/navigation-menu";
+import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger, navigationMenuTriggerStyle } from "~/components/ui/navigation-menu";
 import { cn } from "~/lib/utils";
 
 type NavbarProps = {
@@ -11,7 +12,7 @@ type NavbarProps = {
 
 export default function Navbar({className,navRef}:NavbarProps) {
   return (
-    <div ref={navRef} className={cn("fixed top-0 w-full p-4 px-60 bg-sky-200 z-10",className)}>
+    <div ref={navRef} className={cn("fixed top-0 w-full p-4 xl:px-60 bg-sky-200 z-10",className)}>
       <NavigationMenu>
         <NavigationMenuList>
           {/* Sample Comp for Item */}
@@ -20,7 +21,9 @@ export default function Navbar({className,navRef}:NavbarProps) {
             <NavigationMenuContent>
               <ul className="flex w-[300px] flex-col gap-3 p-4">
                 <li>
-                  <NavigationMenuLink>Link</NavigationMenuLink>
+                  <Link href="/">
+                    <NavigationMenuLink className={navigationMenuTriggerStyle()}>Link</NavigationMenuLink>
+                  </Link>
                 </li>
               </ul>
             </NavigationMenuContent>
