@@ -1,5 +1,5 @@
 'use client'
-import { useRef, useState } from "react";
+import { useRef } from "react";
 import {ImagePlaceholder, CarouselImagePlaceholder} from "./_components/imageplaceholder";
 import { Page } from "./_components/pagedefault";
 import { useGSAP } from '@gsap/react'
