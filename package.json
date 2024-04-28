@@ -4,7 +4,8 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "next build",
+    "build": "next build ",
+    "skipBuild":"set SKIP_ENV_VALIDATION=true next build",
     "db:push": "drizzle-kit push:mysql",
     "db:studio": "drizzle-kit studio",
     "dev": "next dev",
