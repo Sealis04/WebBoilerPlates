@@ -31,7 +31,7 @@ Follow our deployment guides for [Vercel](https://create.t3.gg/en/deployment/ver
 
 
 
-[ ] Directory component needs pagination, filtering and component itself
+[x] Directory component needs pagination, filtering and component itself
 [ ] login signup page
-[ ] about us page
-[ ] owners/council members page
+[x] about us page
+[x] owners/council members page

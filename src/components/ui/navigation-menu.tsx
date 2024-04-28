@@ -50,7 +50,7 @@ const NavigationMenuTrigger = React.forwardRef<
 >(({ className, children, ...props }, ref) => (
   <NavigationMenuPrimitive.Trigger
     ref={ref}
-    className={cn(navigationMenuTriggerStyle(), "group", className)}
+    className={cn(navigationMenuTriggerStyle(), "group", className,"bg-transparent")}
     {...props}
   >
     {children}{""}
@@ -78,6 +78,21 @@ const NavigationMenuContent = React.forwardRef<
 NavigationMenuContent.displayName = NavigationMenuPrimitive.Content.displayName
 
 const NavigationMenuLink = NavigationMenuPrimitive.Link
+
+const CustNavigationMenuLink = React.forwardRef<
+  React.ElementRef<typeof NavigationMenuPrimitive.Link>,
+  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Link>
+>(({ className, ...props }, ref) => (
+  <NavigationMenuPrimitive.Link
+    className={cn(className, "data-[state=open]:bg-transparent hover:bg-white bg-transparent")}
+    ref={ref}
+    active={false}
+    {...props}
+  />
+));
+
+CustNavigationMenuLink.displayName = NavigationMenuPrimitive.Link.displayName
+
 
 const NavigationMenuViewport = React.forwardRef<
   React.ElementRef<typeof NavigationMenuPrimitive.Viewport>,
@@ -123,6 +138,7 @@ export {
   NavigationMenuContent,
   NavigationMenuTrigger,
   NavigationMenuLink,
+  CustNavigationMenuLink,
   NavigationMenuIndicator,
   NavigationMenuViewport,
 }
