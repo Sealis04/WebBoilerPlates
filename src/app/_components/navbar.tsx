@@ -29,7 +29,7 @@ export default function Navbar({ className, navRef }: NavbarProps) {
         className,
       )}
     >
-      <ImagePlaceholder src="bgimages/images.png" className="h-auto w-[10vw] cursor-pointer" onClick={()=>{
+      <ImagePlaceholder src="/bgimages/images.png" className="h-auto w-[10vw] cursor-pointer" onClick={()=>{
         route.push("/")
       }}/>
       <NavigationMenu >

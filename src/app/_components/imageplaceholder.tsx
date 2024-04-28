@@ -10,7 +10,7 @@ type placeholder = {
     height?:number
     onClick?:()=>void
 }
-function ImagePlaceholder({src="bgimages/base.jpg", className,imageRef,onClick}:placeholder){
+function ImagePlaceholder({src="/bgimages/base.jpg", className,imageRef,onClick}:placeholder){
     return (
         <div ref={imageRef} className={cn(`relative flex flex-col overflow-hidden w-[95%] h-[60vh]`,className)} onClick={onClick}>
             <Image alt="MIA" src={src} fill={true} className={cn("w-full h-auto max-w-[100vw] object-contain object-[50%_50%]")} />
