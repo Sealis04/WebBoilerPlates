@@ -16,7 +16,7 @@ const config = {
         }]
     },
     output:"export",
-    basePath:"WebBoilerPlates"
+    basePath:"/WebBoilerPlates"
 };
 
 export default config;
