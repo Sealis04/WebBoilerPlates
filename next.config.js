@@ -7,7 +7,6 @@ await import("./src/env.js");
 /** @type {import("next").NextConfig} */
 
 const config = {
-    output:"export",
     images:{
         remotePatterns:[{
             protocol:'https',
@@ -16,6 +15,8 @@ const config = {
             pathname:'/'
         }]
     },
+    output:"export",
+    basePath:"WebBoilerPlates"
 };
 
 export default config;
