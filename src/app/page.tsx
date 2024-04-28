@@ -5,7 +5,7 @@ import { Page } from "./_components/pagedefault";
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
-import BaseImage from "../../public/bgimages/1920 x 1080 base.jpg"
+import BaseImage from "https://sealis04.github.io/WebBoilerPlates/public/bgimages/1920 x 1080 base.jpg"
 export default function Home() {
   // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
   gsap.registerPlugin(useGSAP,ScrollTrigger);

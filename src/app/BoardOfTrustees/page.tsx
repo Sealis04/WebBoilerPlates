@@ -1,7 +1,7 @@
 'use client'
 import { ImagePlaceholder } from "../_components/imageplaceholder";
 import { Page } from "../_components/pagedefault";
-import BaseImage from "../../../public/bgimages/1920 x 1080 base.jpg"
+import BaseImage from "https://sealis04.github.io/WebBoilerPlates/public/bgimages/1920 x 1080 base.jpg"
 export default function Home(){
     return(
         <Page>

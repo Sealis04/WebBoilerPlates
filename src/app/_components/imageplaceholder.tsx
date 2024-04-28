@@ -2,7 +2,7 @@ import Image from "next/image"
 import React, { type RefObject } from "react"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "~/components/ui/carousel"
 import { cn } from "~/lib/utils"
-import BaseImage from "../../../public/bgimages/1920 x 1080 base.jpg"
+import BaseImage from "https://sealis04.github.io/WebBoilerPlates/public/bgimages/1920 x 1080 base.jpg"
 type placeholder = {
     src?:string
     className?:string

@@ -12,7 +12,7 @@ import {
 } from "~/components/ui/navigation-menu";
 import { cn } from "~/lib/utils";
 import { ImagePlaceholder } from "./imageplaceholder";
-import SampImage from "../../../public/bgimages/images.png";
+import SampImage from "https://sealis04.github.io/WebBoilerPlates/public/bgimages/images.png";
 import { useRouter } from "next/navigation";
 type NavbarProps = {
   className?: string;
