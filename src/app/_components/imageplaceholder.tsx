@@ -2,7 +2,6 @@ import Image from "next/image"
 import React, { type RefObject } from "react"
 import { Carousel, CarouselContent, CarouselItem, CarouselNext, CarouselPrevious } from "~/components/ui/carousel"
 import { cn } from "~/lib/utils"
-import BaseImage from "https://sealis04.github.io/WebBoilerPlates/public/bgimages/1920 x 1080 base.jpg"
 type placeholder = {
     src?:string
     className?:string
@@ -11,7 +10,7 @@ type placeholder = {
     height?:number
     onClick?:()=>void
 }
-function ImagePlaceholder({src=BaseImage.src, className,imageRef,onClick}:placeholder){
+function ImagePlaceholder({src="/bgImages/base.jpg", className,imageRef,onClick}:placeholder){
     return (
         <div ref={imageRef} className={cn(`relative flex flex-col overflow-hidden w-[95%] h-[60vh]`,className)} onClick={onClick}>
             <Image alt="MIA" src={src} fill={true} className={cn("w-full h-auto max-w-[100vw] object-contain object-[50%_50%]")} />

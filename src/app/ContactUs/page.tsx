@@ -1,7 +1,6 @@
 'use client'
 import { ImagePlaceholder } from "../_components/imageplaceholder";
 import { Page } from "../_components/pagedefault";
-import BaseImage from "https://sealis04.github.io/WebBoilerPlates/public/bgimages/1920 x 1080 base.jpg"
 import { Label } from "~/components/ui/label";
 export default function Home(){
     return (
@@ -22,7 +21,7 @@ export default function Home(){
           </Label>
         </div>
         <ImagePlaceholder
-          src={BaseImage.src}
+          src="/bgImages/base.jpg"
           className="h-[90vh] w-[100%] px-60"
         />
       </Page>

@@ -12,7 +12,6 @@ import {
 } from "~/components/ui/navigation-menu";
 import { cn } from "~/lib/utils";
 import { ImagePlaceholder } from "./imageplaceholder";
-import SampImage from "https://sealis04.github.io/WebBoilerPlates/public/bgimages/images.png";
 import { useRouter } from "next/navigation";
 type NavbarProps = {
   className?: string;
@@ -30,7 +29,7 @@ export default function Navbar({ className, navRef }: NavbarProps) {
         className,
       )}
     >
-      <ImagePlaceholder src={SampImage.src} className="h-auto w-[10vw] cursor-pointer" onClick={()=>{
+      <ImagePlaceholder src="/bgImages/images.png" className="h-auto w-[10vw] cursor-pointer" onClick={()=>{
         route.push("/")
       }}/>
       <NavigationMenu >

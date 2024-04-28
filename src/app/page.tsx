@@ -5,7 +5,6 @@ import { Page } from "./_components/pagedefault";
 import { useGSAP } from '@gsap/react'
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
-import BaseImage from "https://sealis04.github.io/WebBoilerPlates/public/bgimages/1920 x 1080 base.jpg"
 export default function Home() {
   // eslint-disable-next-line @typescript-eslint/no-unsafe-argument
   gsap.registerPlugin(useGSAP,ScrollTrigger);
@@ -32,10 +31,10 @@ export default function Home() {
   },{});
   return (
     <Page childClassName="mt-0" navBarClassName="bg-transparent" navBarRef={navBarRef}>
-      <ImagePlaceholder src={BaseImage.src} imageRef={topImageRef} className="h-[100vh] w-[100%] px-60"/>
-      <CarouselImagePlaceholder className="px-60" srcImages={[BaseImage.src, BaseImage.src, BaseImage.src]}/>
-      <ImagePlaceholder src={BaseImage.src} className="h-[40vh] px-60"/>
-      <ImagePlaceholder src={BaseImage.src} className="h-[40vh] px-60"/>
+      <ImagePlaceholder src="/bgImages/base.jpg" imageRef={topImageRef} className="h-[100vh] w-[100%] px-60"/>
+      <CarouselImagePlaceholder className="px-60" srcImages={["/bgImages/base.jpg","/bgImages/base.jpg","/bgImages/base.jpg"]}/>
+      <ImagePlaceholder src="/bgImages/base.jpg" className="h-[40vh] px-60"/>
+      <ImagePlaceholder src="/bgImages/base.jpg" className="h-[40vh] px-60"/>
     </Page>
   );
 }
