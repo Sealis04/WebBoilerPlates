@@ -31,10 +31,10 @@ export default function Home() {
   },{});
   return (
     <Page childClassName="mt-0" navBarClassName="bg-transparent" navBarRef={navBarRef}>
-      <ImagePlaceholder src="/bgImages/base.jpg" imageRef={topImageRef} className="h-[100vh] w-[100%] px-60"/>
-      <CarouselImagePlaceholder className="px-60" srcImages={["/bgImages/base.jpg","/bgImages/base.jpg","/bgImages/base.jpg"]}/>
-      <ImagePlaceholder src="/bgImages/base.jpg" className="h-[40vh] px-60"/>
-      <ImagePlaceholder src="/bgImages/base.jpg" className="h-[40vh] px-60"/>
+      <ImagePlaceholder src="/bgimages/base.jpg" imageRef={topImageRef} className="h-[100vh] w-[100%] px-60"/>
+      <CarouselImagePlaceholder className="px-60" srcImages={["/bgimages/base.jpg","/bgimages/base.jpg","/bgimages/base.jpg"]}/>
+      <ImagePlaceholder src="/bgimages/base.jpg" className="h-[40vh] px-60"/>
+      <ImagePlaceholder src="/bgimages/base.jpg" className="h-[40vh] px-60"/>
     </Page>
   );
 }
