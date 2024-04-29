@@ -15,6 +15,7 @@ const config = {
             pathname:'/'
         }]
     },
+    output:"export",
     basePath:"/WebBoilerPlates"
 };
 
