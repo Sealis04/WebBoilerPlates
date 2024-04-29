@@ -4,7 +4,7 @@ import { Page } from "../_components/pagedefault";
 export default function Home(){
     return(
         <Page>
-            <ImagePlaceholder src="/bgimages/base.jpg" className="h-[90vh] w-[100%] px-60"/>
+            <ImagePlaceholder src="/WebBoilerPlates/bgimages/base.jpg" className="h-[90vh] w-[100%] px-60"/>
         </Page>
     )
 }

@@ -21,7 +21,7 @@ export default function Home(){
           </Label>
         </div>
         <ImagePlaceholder
-          src="/bgimages/base.jpg"
+          src="/WebBoilerPlates/bgimages/base.jpg"
           className="h-[90vh] w-[100%] px-60"
         />
       </Page>

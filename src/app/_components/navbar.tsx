@@ -29,8 +29,8 @@ export default function Navbar({ className, navRef }: NavbarProps) {
         className,
       )}
     >
-      <ImagePlaceholder src="/bgimages/images.png" className="h-auto w-[10vw] cursor-pointer" onClick={()=>{
-        route.push("/")
+      <ImagePlaceholder src="/WebBoilerPlates/bgimages/images.png" className="h-auto w-[10vw] cursor-pointer" onClick={()=>{
+        route.push("/") 
       }}/>
       <NavigationMenu >
         <NavigationMenuList>
@@ -50,7 +50,7 @@ export default function Navbar({ className, navRef }: NavbarProps) {
               <ul className="flex w-[250px] flex-col gap-3 p-4">
                 <li className="text-center w-full">
                   <Link className="w-full text-center" href="/BoardOfTrustees" legacyBehavior passHref>
-                    <CustNavigationMenuLink 
+                    <CustNavigationMenuLink
                       className={cn(navigationMenuTriggerStyle(),'w-full')}
                     >
                       Office & Board of Trustees
@@ -59,7 +59,7 @@ export default function Navbar({ className, navRef }: NavbarProps) {
                 </li>
                 <li>
                    <Link href="/Committees" legacyBehavior passHref>
-                    <CustNavigationMenuLink 
+                    <CustNavigationMenuLink
                        className={cn(navigationMenuTriggerStyle(),'w-full')}
                     >
                       Committees
@@ -68,7 +68,7 @@ export default function Navbar({ className, navRef }: NavbarProps) {
                 </li>
                 <li>
                    <Link href="/PastPresidents" legacyBehavior passHref>
-                    <CustNavigationMenuLink 
+                    <CustNavigationMenuLink
                       className={cn(navigationMenuTriggerStyle(),'w-full')}
                     >
                       Active Past Presidents
@@ -77,7 +77,7 @@ export default function Navbar({ className, navRef }: NavbarProps) {
                 </li>
               </ul>
             </NavigationMenuContent>
-          </NavigationMenuItem> 
+          </NavigationMenuItem>
           <NavigationMenuItem>
             <NavigationMenuTrigger className={className}>
               Membership
@@ -86,7 +86,7 @@ export default function Navbar({ className, navRef }: NavbarProps) {
               <ul className="flex w-[320px] flex-col gap-3 p-4">
                 <li className="text-center w-full">
                   <Link className="w-full text-center" href="/HowToJoin">
-                    <CustNavigationMenuLink 
+                    <CustNavigationMenuLink
                       className={cn(navigationMenuTriggerStyle(),'w-full')}
                     >
                       How to Join PCCI-VC
@@ -95,7 +95,7 @@ export default function Navbar({ className, navRef }: NavbarProps) {
                 </li>
                 <li>
                    <Link href="/PCCIBenefits" legacyBehavior passHref>
-                    <CustNavigationMenuLink 
+                    <CustNavigationMenuLink
                        className={cn(navigationMenuTriggerStyle(),'w-full')}
                     >
                       Members Benefits
@@ -104,7 +104,7 @@ export default function Navbar({ className, navRef }: NavbarProps) {
                 </li>
                 <li>
                    <Link href="/MembersDirectory" legacyBehavior passHref>
-                    <CustNavigationMenuLink 
+                    <CustNavigationMenuLink
                       className={cn(navigationMenuTriggerStyle(),'w-full')}
                     >
                       Members Directory
